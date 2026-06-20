@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+}
+
+header h1{
+    margin-top:15px;
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+nav{
+    background:rgba(255,255,255,0.15);
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+section{
+    padding:50px 20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#667eea;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+.project{
+    margin-top:15px;
+    padding:15px;
+    background:#f4f4f4;
+    border-radius:10px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    background:#667eea;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/180" alt="Profile">
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Student</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<div class="container">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a passionate web developer. I enjoy creating modern,
+            responsive, and user-friendly websites using HTML, CSS, JavaScript,
+            and other technologies.
+        </p>
+    </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Python</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+    <div class="card">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing my work.</p>
+        </div>
+
+        <div class="project">
+            <h3>Student Management System</h3>
+            <p>Manage student records efficiently.</p>
+        </div>
+
+        <div class="project">
+            <h3>Food Delivery App</h3>
+            <p>Online food ordering platform.</p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+    <div class="card">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Your Name | Portfolio Website</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Message Sent Successfully!");
+});
+</script>
+
+</body>
+</html>
